@@ -1,0 +1,62 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Form Validations1 In js video 26</title>
+   <script type="text/javascript">
+   
+   function validate()
+   {
+      let Username = document.getElementById("user");
+      let Password = document.getElementById("pass");
+
+      if(Username.value.trim() =="" ||Password.value =="") 
+      {
+         alert("No BlanK values allowed");
+         return false;
+      }
+      else
+      {
+         true;
+      }
+   }
+   
+   </script>
+</head>
+<body>
+
+   <form onsubmit="return validate()" action="message.html">
+      <input type="text" placeholder="Username" id="user"><br><br>
+      <input type="password" placeholder="Password" id="pass"> <br><br>
+      <button type="submit">Submit</button>
+   </form>
+   
+   <!--  without js we can do the same thing using html 5 required tag but js is secured
+   <form action="message.html">
+         <input type="text" placeholder="Username" id="user" required><br><br>
+         <input type="password" placeholder="Password" id="pass" required> <br><br>
+         <button type="submit">Submit</button>
+   </form>
+   -->
+
+</body>
+</html>
+
+
+
+
+
+
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Switch Case In js</title>
+   <script type="text/javascript" >
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
+-->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Regular Expressons2 In js video 29</title>
+   <script type="text/javascript">
+   //Regular Expressions are used to perform powerful pattern-matching and search-and-replace functions on text
+   //Character Sets and Ranges
+   function validate()
+   {
+      let Username = document.getElementById("user").value;
+      //regx = new RegExp("E00","i");
+      //let regx = /simple/; or
+      //let regx = /[sdp]imple/;//more character
+      //let regx = /[a-x]imple/; //for large number
+      //let regx = /[a-x]imple/i; //for case insensitive u can use capital Aimple
+      // for number
+      //let regx = /[0-5]a[6-9]c/;//with diffrent character
+      //if u want to exclude a character
+      let regx = /[^1abc]abc/;
+
+      if(regx.test(Username))
+      {
+         alert("valid Username");
+      }
+      else
+      {
+         alert("Invalid Username");
+         document.getElementById("lbuser").style.visibility="visible";
+      }
+
+   }
+   </script>
+</head>
+<body>
+   <form action="#">
+      <input type="text"placeholder="Username" id="user"><br>
+      <label id="lbuser" style="color:red;visibility: hidden">Invalid Username</label><br><br>
+
+      <button onclick="validate()" type="submit">Submit</button>
+   </form>
+</body>
+</html>
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Email validation using regular expression In js video 31</title>
+   <script type="text/javascript">
+   /*  most useable tag
+   \d is for - match any digit (equal to [0-9])
+   \w is for- match any word character (a-z,A-Z,0-9 & _)
+   \s is for- match whitespace character (eg-space & tabs)
+   \t is for- match a tab only
+    */
+      function validate()
+      {
+         let text = document.getElementById("text1").value;
+         //regx means regular expression object 
+         //tanmoy11@simplesnippets.co.in
+         let regx = /^([a-z0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+         //1.Any letters,numbers,dot and or hyphens
+         //2.Any letters,numbers,and or hyphen(-)
+         //3.Any letter(a-z)
+         //4.a dot(.)then any letter
+         if(regx.test(text))
+         {
+            document.getElementById("lbltext").innerHTML="Valid";
+            document.getElementById("lbltext").style.visibility="visible";
+            document.getElementById("lbltext").style.color="green";
+         }
+         else//if dosenot match
+         {
+            document.getElementById("lbltext").innerHTML="inValid";
+            document.getElementById("lbltext").style.visibility="visible";
+            document.getElementById("lbltext").style.color="red";
+         }
+      }
+
+   </script>
+</head>
+<body>
+   <form action="#">
+      <input type="text"placeholder="Email" id="text1"><br>
+      <label id="lbltext" style="color:red;visibility: hidden">Invalid Number</label><br><br>
+
+      <button onclick="validate()" type="button">Submit</button><br><br>
+   </form>
+   <img src="./Email_Validation.jpg" width="450">
+</body>
+</html>
+
+
+
+
+

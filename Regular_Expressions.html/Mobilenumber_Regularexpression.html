@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Mobile Number validation using regular expression In js video 30</title>
+   <script type="text/javascript">
+   /*  most useable tag
+   \d is for - match any digit (equal to [0-9])
+   \w is for- match any word character (a-z,A-Z,0-9 & _)
+   \s is for- match whitespace character (eg-space & tabs)
+   \t is for- match a tab only
+    */
+      function validate()
+      {
+         let text = document.getElementById("text1").value;
+
+         let regx = /^[7-9]\d{9}$/;
+         //^ means the number start with 7 to 9 and total 10 digit
+         //$ means after 9 no digit can accept
+         // \d means(0-9)
+         if(regx.test(text))
+         {
+            document.getElementById("lbltext").innerHTML="Valid";
+            document.getElementById("lbltext").style.visibility="visible";
+            document.getElementById("lbltext").style.color="green";
+         }
+         else
+         {
+            document.getElementById("lbltext").innerHTML="inValid";
+            document.getElementById("lbltext").style.visibility="visible";
+            document.getElementById("lbltext").style.color="red";
+         }
+      }
+
+   </script>
+</head>
+<body>
+   <form action="#">
+      <input type="text"placeholder="Cellphone" id="text1"><br>
+      <label id="lbltext" style="color:red;visibility: hidden">Invalid Number</label><br><br>
+
+      <button onclick="validate()" type="button">Submit</button>
+   </form>
+</body>
+</html>
+
+
+
+
+
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Switch Case In js</title>
+   <script type="text/javascript" >
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
+-->

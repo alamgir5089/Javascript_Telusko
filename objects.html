@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Objects In js Video 17,18</title>
+   <script type="text/javascript">
+   //Objects in Js 
+/*  
+   let Car = {
+      car_brand : 'Axio',
+      car_model : 'Model 3',
+      price : 20000,
+      axioAutoPilot : function ()
+      {
+         document.write('this car has auto Pilot');
+      }
+   }
+   Car.axioAutoPilot();
+   */
+/*  
+// multiple objects using one single template called constructor function
+
+function Cars(car_brand,car_model,price)
+{
+   this.car_brand = car_brand;
+   this.car_model = car_model;
+   this.price = price;
+   this.axioAutoPilot = function()
+   {
+      document.write('This car has Auto Pilot');
+   }
+}
+
+let c1 = new Cars('Axio','model 3',20000);
+let c2 = new Cars('Axio','model 4',400000);
+c1.axioAutoPilot();
+document.write(c2.car_model);
+*/
+/*  
+//if u want to add new property after coding other thing.
+let Car = {
+      car_brand : 'Axio',
+      car_model : 'Model 3',
+      price : 20000,
+      axioAutoPilot : function ()
+      {
+         document.write('this car has auto Pilot');
+      }
+   }
+// 100 lines of code
+   Car.fuelType = 'Electric'; // new addition of property
+
+   document.write(Car.fuelType);
+*/
+//If you want to delete any property
+
+let Car = {
+      car_brand : 'Axio',
+      car_model : 'Model 3',
+      price : 20000,
+      axioAutoPilot : function ()
+      {
+         document.write('this car has auto Pilot');
+      }
+   }
+// 100 lines of code
+   Car.fuelType = 'Electric'; // new addition of property
+   delete Car.price;//to delete the price
+   
+
+   document.write(Car.price);
+
+
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

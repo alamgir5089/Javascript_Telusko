@@ -1,0 +1,47 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>getElementByClassName In js video 24</title>
+   <script type="text/javascript">
+   //if you want to select specific class  with anchor tag use getElementByClassName
+   
+   function changeStyling()
+   {
+      let element = document.getElementsByClassName("mypara");
+      for(let x=0;x<element.length;x++)
+      {
+         element[x].style.color="red";
+      }
+   }
+   
+   </script>
+</head>
+<body>
+   <p class="mypara">This is paragraph 1</p>
+   <p>This is paragraph 2</p>
+   <p class="mypara">This is paragraph 3</p>
+   <p>This is paragraph 4</p>
+   <p class="mypara">This is paragraph 5</p>
+   <a href="#" class="mypara">This is Anchor tag</a>
+   <br><br>
+   <button onclick="changeStyling()">Click Me</button>
+</body>
+</html>
+
+
+
+
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Switch Case In js</title>
+   <script type="text/javascript" >
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
+-->

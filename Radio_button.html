@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Radiobuttons js 21</title>
+   <script type="text/javascript">
+   function fn1()
+   {
+      let rd1 = document.getElementById('rd1');
+      let rd2 = document.getElementById('rd2');
+
+      if(rd1.checked==true)
+         alert('the channel selected is: '+rd1.value);
+      else if (rd2.checked==true)
+         alert ('the channel selected is: '+rd2.value);
+      else
+         alert('No channel selected');
+   }
+   </script>
+</head>
+<body>
+   <input type="radio" name="group1" id="rd1" value="Simple Snippets">Simple Snippets</input> <br>
+   <input type="radio" name="group1" id="rd2" value="Alamgir Learning">Alamgir Learning</input> <br><br>
+   
+   <button onclick="fn1()" id="btn1">Click Me</button>
+</body>
+</html>
+
+
+
+
+
+
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Switch Case In js</title>
+   <script type="text/javascript" >
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
+-->

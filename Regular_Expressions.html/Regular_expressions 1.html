@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Regular Expressons In js video 28</title>
+   <script type="text/javascript">
+   //Regular Expressions are used to perform powerful pattern-matching and search-and-replace functions on text
+
+   function validate()
+   {
+      let Username = document.getElementById("user").value;
+      let regx = /E00/;
+      if(regx.test(Username))
+      {
+         alert("valid Username");
+      }
+      else
+      {
+         alert("Invalid Username");
+         document.getElementById("lbuser").style.visibility="visible";
+      }
+
+   }
+   </script>
+</head>
+<body>
+   <form action="#">
+      <input type="text"placeholder="Username" id="user"><br>
+      <label id="lbuser" style="color:red;visibility: hidden">Invalid Username</label><br><br>
+
+      <button onclick="validate()" type="submit">Submit</button>
+   </form>
+</body>
+</html>
+
+
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Switch Case In js</title>
+   <script type="text/javascript" >
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
+-->
